@@ -1,0 +1,291 @@
+/*GENERAL*/
+
+body {
+    font-family: 'Noto Sans JP' , sans-serif !important;
+    min-height: 100vh;
+    margin: 10px;
+    padding: 0px;
+    opacity: 1; 
+    background-image: url(../img/laser-header2.png), linear-gradient(to top,#805ACB,#8C9EFF);
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none !important; 
+    color: black !important;
+}
+#imgFondo{
+    transform: translate(0px, 500px);
+}
+#nombrePagina {
+    font-family: 'Acme', sans-serif;
+    font-size: 70px;
+    color: #ffff8d;
+    word-spacing: 30px;
+    text-align: center;
+    text-shadow: 3px 1px black;
+    letter-spacing: 3px;
+}
+   
+/*navegador*/
+
+nav ul {
+    padding: 10px;
+	height: 100px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    text-align: center
+}
+nav ul li {
+    background-color: #fff9c4;
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+	height: 20px;
+}
+
+ul, li {
+    display: inline-block;
+    padding: 5px;
+    color: rgb(250, 243, 183);
+    list-style: none;
+    margin: 5px;
+}
+ul ul { 
+    display: none ;
+    position: absolute;
+}
+ul ul li {
+    display: block;
+}
+ul li:hover ul {
+    display: block;
+}
+nav ul li:hover {
+    height: 20px ;
+    width: 200px;
+    background-color: #ffe57f;
+}
+
+#tituloPrincipal {
+    color: #ea80fc;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: right;
+    text-shadow: 1px 1px black;
+    margin-right: 30px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10px 10px 10px;
+    height: 70px;
+}
+footer ul {
+    list-style: none;
+}
+.instagram {
+    width: 5px;
+}
+
+/*INDEX*/
+
+.seccionPrincipal {
+    margin: 10px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.divInicio {
+    width: 700px;
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid black;
+    box-shadow: 10px 10px black;
+}
+.imgInicio {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+#videoInicio{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.tituloSecundario {
+    color: rgb(66, 90, 230);
+    font-size: 30px;
+    text-align: center;
+}
+.oferta {
+    color: rgba(239, 154, 246, 0.931);
+    font-size: 20px;
+}
+
+/*PRODUCTOS*/
+
+
+#headerConBootstrap{
+    height: 300px !important;
+}
+#nombrePaginaConBootstrap{
+    font-family: 'Acme', sans-serif;
+    font-size: 70px;
+    color: #ffff8d;
+    word-spacing: 30px;
+    text-align: center;
+    text-shadow: 3px 1px black;
+    letter-spacing: 3px;
+    transform: translate(0px, 60px) !important;
+}
+#navegadorConBootstrap{
+    transform: translate(0px, 70px);
+}
+#navegadorConBootstrap ul li{
+    height: 45px;
+}
+.container-fluid {
+    transform: translate(0px, 50px);
+}
+#footerConBootstrap {
+    margin-top: 100px;
+    color: black;
+}
+
+/*MATERIALES*/
+#tablaMateriales {
+    display: flex;
+    justify-content: center;
+}
+table{ 
+    border: 3px solid;
+}
+th {
+    background-color: #ea80fc;
+    border: 1px solid;}
+tr, td {
+    background-color: #ffb2ff; 
+    border: 1px solid;
+}
+table:hover{
+    transform: scale(1.5,1.5);
+}
+
+/*Galeria de trabajos*/
+
+#gridContainer {
+
+    display: grid;
+
+    grid-template-areas:
+
+      "header header header"
+
+      "main main main"
+
+      "footer footer footer";
+
+    grid-template-rows: 20% 70% 10%; 
+
+    grid-template-columns: repeat(3, 1fr);
+}
+header {
+grid-area: header;
+}
+footer {
+   grid-area: footer;
+}
+main {
+    grid-area: main;
+}
+.gridContainer {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 400px;
+    grid-gap: 30px; 
+}
+.ejemplo{
+    height: 200px;
+    width: 250px;
+}
+.ejemplo:hover {
+    transform: scale(1.5,1.5);
+}
+
+/*Contacto*/
+
+
+#formulario{
+   display: flex;
+   justify-content: center;
+}
+.tituloCasillero{
+    display: block;
+}
+
+
+
+/*=== Media querie ===*/
+
+/* Mobile Styles (apliqué para iphone 6/7/8 375x667*/
+@media only screen and (max-width: 400px) {   
+    header {
+    width: 370px;
+    height: 500px;
+    }
+    nav ul {
+        padding: 10px;
+        height: 100px;
+    
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        text-align: center
+    }
+    #tituloPrincipal {
+        text-align: center;
+    }
+    .seccionPrincipal {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .divInicio {
+        width: 300px;
+        padding: 5px;
+        border: 3px solid black;
+    }
+    .imgInicio {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*PRODUCTOS*/
+
+    #headerProductos{
+        height: 600px !important;
+    }
+    
+  }
+  /* Tablet Styles (apliqué para Ipad 768x1024) */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    .divInicio {
+        width: 400px;
+        margin: 5px;
+    }
+    .imgInicio {
+        display: flex;
+        justify-content: center;
+        width: 50px;
+    }
+  }
+
+  

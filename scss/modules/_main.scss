@@ -1,0 +1,120 @@
+#tituloPrincipal {
+    color: #ea80fc;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: right;
+    text-shadow: 1px 1px black;
+    margin-right: 30px;
+}
+
+/*INDEX*/
+
+.seccionPrincipal {
+    margin: 10px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.divInicio {
+    width: 700px;
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid black;
+    box-shadow: 10px 10px black;
+}
+.imgInicio {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+#videoInicio{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.tituloSecundario {
+    color: rgb(66, 90, 230);
+    font-size: 30px;
+    text-align: center;
+}
+.oferta {
+    color: rgba(239, 154, 246, 0.931);
+    font-size: 20px;
+}
+
+/*PRODUCTOS*/
+
+.container-fluid{
+    transform: translate(0px, 50px);
+}
+
+/*MATERIALES*/
+
+#tablaMateriales {
+    display: flex;
+    justify-content: center;
+}
+table{ 
+    border: 3px solid;
+    transform: translate(100px);
+
+    th {
+        background-color: #ea80fc;
+        border: 1px solid;}
+
+    td {
+        background-color: #ffb2ff; 
+        border: 1px solid;
+    } 
+    :hover {
+        transform: scale(1.5,1.5);
+    }   
+}
+
+/*GALERIA DE TRABAJOS*/
+
+#gridContainer{
+  display: grid;
+  grid-template-areas: 
+  "header header header" 
+  "main main main" 
+  "footer footer footer";
+  grid-template-rows: 20% 70% 10%;
+  grid-template-columns: repeat(3, 1fr);
+}
+header{
+  grid-area: header;
+}
+footer{
+  grid-area: footer;
+}
+main{
+  grid-area: main;
+}
+.gridContainer{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 400px;
+  grid-gap: 30px;
+}
+.ejemplo{
+  height: 200px;
+  width: 250px;
+
+  &:hover{
+    transform: scale(1.5, 1.5);
+  }
+}
+/*CONTACTO*/
+
+#formulario {
+  display: flex;
+  justify-content: center;
+}
+.tituloCasillero {
+  display: block;
+}  
