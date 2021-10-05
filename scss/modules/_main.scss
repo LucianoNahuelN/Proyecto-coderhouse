@@ -5,6 +5,7 @@
     text-align: right;
     text-shadow: 1px 1px black;
     margin-right: 30px;
+    margin-bottom: 20px;
 }
 
 /*INDEX*/
@@ -60,7 +61,6 @@
 table{ 
     border: 3px solid;
     transform: translate(100px);
-
     th {
         background-color: #ea80fc;
         border: 1px solid;}
@@ -69,9 +69,9 @@ table{
         background-color: #ffb2ff; 
         border: 1px solid;
     } 
-    :hover {
-        transform: scale(1.5,1.5);
-    }   
+}
+table:hover{
+  transform: scale(1.5,1.5);
 }
 
 /*GALERIA DE TRABAJOS*/

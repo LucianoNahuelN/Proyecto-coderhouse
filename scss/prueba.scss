@@ -1,24 +1,9 @@
+@import "modules/body";
 @import "modules/header";
 @import "modules/main";
 @import "modules/footer";
+@import "modules/mediaqueries";
 
-/*BODY GENERAL*/
-
-body {
-    font-family: 'Noto Sans JP' , sans-serif !important;
-    min-height: 100vh;
-    margin: 10px 10px 0px 10px;
-    padding: 0px;
-    opacity: 1; 
-    background-image: url(../img/laser-header2.png), linear-gradient(to top,#805ACB,#8C9EFF);
-    background-repeat: no-repeat;
-
-    a{
-        text-decoration: none !important; 
-        color: black !important;
-    }
-    
-}
 
 
 

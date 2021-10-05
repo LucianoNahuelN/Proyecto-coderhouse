@@ -46,8 +46,8 @@
           <li><a href="materiales.html">Materiales</a></li>
           <li><a href="galeriadetrabajos.html">Galeria de Trabajos</a>
             <ul>
-              <li><a href="galeriadetrabajos.html#grabado">Grabado</a></li>
-              <li><a href="galeriadetrabajos.html#corte">Corte</a></li>
+              <li class="submenu"><a href="galeriadetrabajos.html#grabado">Grabado</a></li>
+              <li class="submenu"><a href="galeriadetrabajos.html#corte">Corte</a></li>
             </ul>
           </li>
           <li><a href="contacto.html">Contacto</a></li>
@@ -72,14 +72,18 @@
 
     <!--formulario-->
     <section id="formulario">
-      <form >
+      <form action="enviar.php" method="post" >
         <div>
           <label for="nombre_apellido" class="tituloCasillero">Nombre:</label> 
-          <input required type="text" name="nombre_apellido"/>
+          <input required type="text" name="nombre"/>
         </div>
         <div>
           <label for="email" class="tituloCasillero">Email:</label>
           <input required type="email" name="email" placeholder="nombre@ejemplo.com"/>
+        </div>
+        <div>
+          <label for="Teléfono" class="tituloCasillero">Teléfono:</label>
+          <input required type="text" name="telefono"/>
         </div>
         <div>
         <label for="Tipo de trabajo" class="tituloCasillero">Tipo de trabajo:</label>
@@ -90,7 +94,7 @@
         </div>
         <div>
           <label for="Texto" class="tituloCasillero">Mensaje:</label>
-          <textarea required name="Texto" rows="8" cols="50"></textarea>
+          <textarea required name="Texto" rows="8" cols="35"></textarea>
         </div>
         <div>
           <button type="submit" class="btn btn-outline-dark" btn-lg">Enviar</button>

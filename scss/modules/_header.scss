@@ -57,7 +57,7 @@ nav ul li:hover{
 /*MODIFICACIONES PARA LOS HTML CON BOOTSTRAP*/
 
 #headerConBootstrap {
-  height: 300px !important;
+  padding: 35px;
 }
 #nombrePaginaConBootstrap{
   font-family: 'Acme', sans-serif;
@@ -67,11 +67,9 @@ nav ul li:hover{
   text-align: center;
   text-shadow: 3px 1px black;
   letter-spacing: 3px;
-  transform: translate(0px, 60px) !important;
 }
 #navegadorConBootstrap{
-  transform: translate(0px, 70px);
-
+  margin: 50px;
   ul li{
     height: 45px;
   }
