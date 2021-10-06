@@ -184,6 +184,9 @@ main {
 .tituloCasillero {
   display: block; }
 
+textarea {
+  width: 355px; }
+
 /*FOOTER*/
 footer {
   display: flex;
