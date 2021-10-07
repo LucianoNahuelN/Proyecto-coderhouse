@@ -1,9 +1,8 @@
 #tituloPrincipal {
-    color: #ea80fc;
     font-weight: 700;
     font-size: 40px;
     text-align: right;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 1px black;
     margin-right: 30px;
     margin-bottom: 20px;
 }
@@ -37,12 +36,10 @@
 }
 
 .tituloSecundario {
-    color: rgb(66, 90, 230);
     font-size: 30px;
     text-align: center;
 }
 .oferta {
-    color: rgba(239, 154, 246, 0.931);
     font-size: 20px;
 }
 
@@ -60,18 +57,16 @@
 }
 table{ 
     border: 3px solid;
-    transform: translate(100px);
+    height: 600px;
+    width: 500px;
     th {
-        background-color: #ea80fc;
-        border: 1px solid;}
-
-    td {
-        background-color: #ffb2ff; 
         border: 1px solid;
-    } 
-}
-table:hover{
-  transform: scale(1.5,1.5);
+        text-align: center;
+      }
+    td {
+        border: 1px solid;
+        text-align: center;
+      } 
 }
 
 /*GALERIA DE TRABAJOS*/
@@ -104,10 +99,6 @@ main{
 .ejemplo{
   height: 200px;
   width: 250px;
-
-  &:hover{
-    transform: scale(1.5, 1.5);
-  }
 }
 /*CONTACTO*/
 
@@ -120,4 +111,9 @@ main{
 }  
 textarea {
   width: 355px;
+}
+#gracias {
+  transform: translate(500px, 300px);
+  text-align: center;
+  width: 500px;
 }

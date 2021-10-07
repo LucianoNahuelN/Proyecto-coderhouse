@@ -1,0 +1,24 @@
+/*COLORES*/
+
+$colors: (
+ rosa: #ffb2ff,
+ rosa-oscuro:  #ea80fc,
+ amarillo: #f8f895,
+ violeta: rgb(66, 90, 230),
+);
+
+@each $name-color, $bgcolor in $colors {
+    .bg-#{$name-color} {
+        background-color: $bgcolor;
+    }
+}
+
+@each $name-color, $color in $colors {
+    .#{$name-color} {
+        color: $color;
+    }
+ }
+ 
+
+
+ 

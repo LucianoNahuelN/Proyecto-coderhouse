@@ -41,6 +41,7 @@
         display: flex;
         justify-content: center;
         height: 300px;
+        margin: 25px;
     }
     .imgIndex{
         width: 300px;
@@ -57,7 +58,7 @@
 
     /*MATERIALES*/
     #tablaMateriales{
-        justify-content: left;
+        justify-content: center;
     }
 
     /*GALERIA DE TRABAJOS*/
@@ -77,6 +78,9 @@
   }
   /* Tablet Styles (apliqué para Ipad 768x1024) */
   @media only screen and (min-width: 401px) and (max-width: 960px) {
+    .submenu{
+        display: none;
+    }
     /*INDEX*/
     .seccionPrincipal {
         display: flex;
@@ -92,7 +96,7 @@
     .imgInicio {
         display: flex;
         justify-content: center;
-        width: 50px;
+        margin: 25px;
     }
    
     /*GALERIA DE TRABAJOS*/
@@ -111,3 +115,14 @@
         margin: 0px;
     }
   }
+  /*Hover para desktop*/
+  @media (min-width: 960px){
+  nav ul li:hover{
+    height: 20px;
+    width: 200px;
+    background-color: #ffe57f;
+  }
+  .ejemplo:hover{
+    transform: scale(1.5, 1.5);
+  }
+}

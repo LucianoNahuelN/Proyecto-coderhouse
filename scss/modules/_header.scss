@@ -1,7 +1,6 @@
 #nombrePagina {
     font-family: 'Acme', sans-serif;
     font-size: 70px;
-    color: #ffff8d;
     word-spacing: 30px;
     text-align: center;
     text-shadow: 3px 1px black;
@@ -19,7 +18,7 @@ nav ul{
   text-align: center;
 
   li{
-    background-color: #fff9c4;
+    /*background-color: #f8f895;*/
     list-style: none;
     border: 2px solid black;
     border-radius: 10px;
@@ -31,7 +30,6 @@ nav ul{
 ul, li{
   display: inline-block;
   padding: 5px;
-  color: rgb(250, 243, 183);
   list-style: none;
   margin: 5px;
 }
@@ -48,11 +46,6 @@ ul{
     display: block;
    }
 }
-nav ul li:hover{
-  height: 20px;
-  width: 200px;
-  background-color: #ffe57f;
-}
 
 /*MODIFICACIONES PARA LOS HTML CON BOOTSTRAP*/
 
@@ -62,7 +55,6 @@ nav ul li:hover{
 #nombrePaginaConBootstrap{
   font-family: 'Acme', sans-serif;
   font-size: 70px;
-  color: #ffff8d;
   word-spacing: 30px;
   text-align: center;
   text-shadow: 3px 1px black;
