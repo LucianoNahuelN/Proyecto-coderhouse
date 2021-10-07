@@ -29,6 +29,7 @@ nav ul {
   justify-content: space-around;
   text-align: center; }
   nav ul li {
+    /*background-color: #f8f895;*/
     list-style: none;
     border: 2px solid black;
     border-radius: 10px;
@@ -136,9 +137,7 @@ table {
 /*GALERIA DE TRABAJOS*/
 #gridContainer {
   display: grid;
-  grid-template-areas: "header header header" 
- "main main main" 
- "footer footer footer";
+  grid-template-areas: "header header header"  "main main main"  "footer footer footer";
   grid-template-rows: 20% 70% 10%;
   grid-template-columns: repeat(3, 1fr); }
 
@@ -259,6 +258,8 @@ footer {
   /*MATERIALES*/
   #tablaMateriales {
     justify-content: center; }
+  table {
+    width: 355px; }
   /*GALERIA DE TRABAJOS*/
   #gridContainer {
     display: block; }
